@@ -15,8 +15,8 @@ import { ApiOkResponse, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { UserService } from './user.service';
 import { Users } from '@prisma/client';
 
-@Controller('user')
-@ApiTags()
+@Controller('/user')
+@ApiTags('user')
 export class UserController {
   constructor(private readonly userService: UserService) {}
 
