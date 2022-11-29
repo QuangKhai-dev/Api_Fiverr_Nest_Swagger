@@ -9,7 +9,7 @@ async function bootstrap() {
   app.enableCors();
 
   // set path main cho tất cả các tuyến đường
-  app.setGlobalPrefix('api');
+  // app.setGlobalPrefix('api');
   app.useGlobalPipes(new ValidationPipe());
   // app.use(json({ limit: '50mb' }));
 
